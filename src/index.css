@@ -16,13 +16,8 @@ h1 {
   margin: auto 0;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-weight: 400;
-}
+h2 { font-size: 2rem;}
+h3 {  font-weight: 400;}
 
 h4 {
   margin: 0;
@@ -44,6 +39,7 @@ a {
   font-size: 0.8rem;
   color: #2B76BC;
 }
+
 /*--- layout--- */
 
 nav {
@@ -80,28 +76,28 @@ section {
   margin-top: 0;
 }
 
-.cards-list {
+.cards--list {
+  width: 80%;
+  margin: 2em auto;
   display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-  overflow-x: auto;
+  gap:1em;
+  flex-direction: column;
 }
 
 .card {
-  width: 100vw;   
+  width: 100%;   
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: 0.5fr 1fr 0.5fr 3fr;
   text-align: left;
-  align-items: center;
   position: relative;
+  margin-bottom: 1.2em;
 }
 
 .card--image {
   width: 94%;
   grid-row: 1/5;
   border-radius: 9px;
-  margin-bottom: 9px;
 }
 
 .card--location {
@@ -115,7 +111,21 @@ section {
   margin-right: 0.3em;
 }
 
-@media (min-width: 840px) {
+@media (max-width: 640px) {
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+  }
+
+  .hero--photo {
+    width:100vw;
+  }
+}
+
+@media (min-width: 1030px) {
   .hero {
     flex-direction: row;
     justify-content: center;
@@ -131,11 +141,14 @@ section {
   }
 
   .card {
-    width: 50vw;
+    width: 100%;
   }
 
-  .cards-list {
-    margin-top: 1.5em;
+  .cards--list {
+    width: 85vw;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   
 }
