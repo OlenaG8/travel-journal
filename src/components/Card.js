@@ -4,11 +4,11 @@ export default function Card(props) {
     return (
         <div className="card">
             <img 
-                src={`./travel-journal/images/${props.coverImg}`} 
+                src={`./images/${props.coverImg}`} 
                 className="card--image" 
             />
             <div className="card--location">
-                <img src="./travel-journal/images/location-dot.png" className="card--icon" />
+                <img src="/travel-journal/images/location-dot.png" className="card--icon" />
                 <h4>{props.location}</h4>
             </div>
             <h5 className="card--title">{props.title}</h5>

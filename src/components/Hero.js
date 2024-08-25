@@ -3,7 +3,7 @@ import React from "react"
 export default function Hero() {
     return (
         <section className="hero">
-            <img src="./travel-journal/images/hero-section.png" className="hero--photo"/>
+            <img src="./images/hero-section.png" className="hero--photo"/>
             <div className="hero--text">
                 <h2 className="hero--header">Travel Journal</h2>
                 <h3 className="hero--text">Discover breathtaking destinations and unforgettable adventures 
