@@ -1,3 +1,6 @@
+# Travel Journal website
+<p>Deployed website: https://olenag8.github.io/travel-journal/ </p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
